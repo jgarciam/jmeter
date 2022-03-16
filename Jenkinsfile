@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Jmeter TEST') {
             steps {
-                sh "mvn verify -Pperformance"
+                sh "./mvnw verify -Pperformance"
             }
         }
     }
